@@ -1,0 +1,37 @@
+n_runs	30
+n_instances	5
+strat_name	"GSynGP"
+restore	False
+optimize_strat	True
+genotype	['mult()', 'div()', 'exp()', 'x_0()', 'x_0()', 'cos()', 'x_0()', 'x_0()', 'mult()', 'sin()', 'x_0()', 'x_0()', 'div()', 'x_0()', 'x_0()']
+p_cross	0.7
+p_mut	0.3
+tourn_size	2
+mutation_size	1
+initial_max_depth	6
+max_depth	17
+p_reeval	0.0
+params_coefs	(1, 1)
+survivors_selection	"elitist"
+elite_size	3
+iteration	"1"
+pop_size	250
+generations	500
+ri	0.0
+ei	0.0
+seeds	[985, 570, 815, 356, 782, 148, 998, 188, 306, 783, 245, 521, 264, 121, 772, 635, 485, 754, 583, 740, 581, 926, 272, 855, 667, 742, 605, 148, 163, 353]
+log_directory	"logs_spambase"
+maximise	False
+compute_diversities	True
+problem	"Spambase1"
+prob_type	"Spambase"
+function_set	['add', 'sub', 'mult', 'div', 'and', 'or', 'not', 'lt', 'eq', 'if-then-else']
+function_mat	{'add': {'arity': 2, 'args': ['float', 'float'], 'return': 'float'}, 'sub': {'arity': 2, 'args': ['float', 'float'], 'return': 'float'}, 'mult': {'arity': 2, 'args': ['float', 'float'], 'return': 'float'}, 'div': {'arity': 2, 'args': ['float', 'float'], 'return': 'float'}, 'and': {'arity': 2, 'args': ['bool', 'bool'], 'return': 'bool'}, 'or': {'arity': 2, 'args': ['bool', 'bool'], 'return': 'bool'}, 'not': {'arity': 1, 'args': ['bool'], 'return': 'bool'}, 'lt': {'arity': 2, 'args': ['float', 'float'], 'return': 'bool'}, 'eq': {'arity': 2, 'args': ['float', 'float'], 'return': 'bool'}, 'if-then-else': {'arity': 3, 'args': ['bool', 'float', 'float'], 'return': 'float'}}
+terminal_set	['bit', 'var', 'uniform-constant']
+terminal_mat	{'bit': {'type': 'bool'}, 'var': {'type': 'float'}, 'uniform-constant': {'type': 'float'}}
+data_types	['float', 'bool']
+terminal_params	{'uniform-constant': {'value': 'np.linspace(0,100,100)'}, 'bit': {'value': '[0,1]'}}
+parent_selection	"gp.tournament_selection"
+ndimensions	57
+domain	[[0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100], [0, 100]]
+npoints	400
